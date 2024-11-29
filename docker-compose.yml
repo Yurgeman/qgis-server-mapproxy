@@ -61,11 +61,11 @@ services:
     volumes:
       - ./mapproxy:/io
     restart: always
-    user: '1000:1000'
+    user: '1100:1000'
     depends_on:
       - qgis-server
     ports:
-      - "8080:8080"
+      - "8008:8080"
 
 networks:
   qgis-server-net:
